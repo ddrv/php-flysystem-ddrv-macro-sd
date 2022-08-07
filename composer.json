@@ -1,0 +1,37 @@
+{
+  "name": "ddrv/flysystem-macro-sd",
+  "description": "flysystem adapter for ddrv/macro-sd",
+  "keywords": ["file", "filesystem", "storage", "files", "flysystem", "macro-sd"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ivan Dudarev",
+      "email": "ivan@ddrv.ru",
+      "homepage": "https://ddrv.ru"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "league/flysystem": "^3.2",
+    "psr/http-client": "^1.0",
+    "psr/http-factory": "^1.0"
+  },
+  "require-dev": {
+    "league/flysystem-adapter-test-utilities": "^3.1",
+    "nyholm/psr7": "^1.5",
+    "phpunit/phpunit": "^9.5",
+    "squizlabs/php_codesniffer": "^3.7",
+    "webclient/fake-http-client": "^2.0",
+    "ddrv/macro-sd": "^0.9.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ddrv\\Flysystem\\MacroSd\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\Ddrv\\Flysystem\\MacroSd\\": "tests/"
+    }
+  }
+}
